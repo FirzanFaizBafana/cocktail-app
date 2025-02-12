@@ -1,5 +1,3 @@
-# Random Cocktail Generator\n\nThis is a simple Node.js and Express.js web app that fetches a random cocktail recipe using TheCocktailDB API.
-
 # 🍹 Random Cocktail Generator
 
 This is a simple Node.js and Express.js web app that fetches a random cocktail recipe using TheCocktailDB API.
