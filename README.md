@@ -4,20 +4,20 @@ This is a simple Node.js and Express.js web app that fetches a random cocktail r
 
 ## 🚀 Getting Started
 
-### 1⃣ Clone this repository:
+### 1 Clone this repository:
 
 ```sh
 git clone https://github.com/FirzanFaizBafana/cocktail-app.git
 cd cocktail-app
 ```
 
-### 2⃣ Install dependencies:
+### 2 Install dependencies:
 
 ```sh
 npm install
 ```
 
-### 3⃣ Start the server:
+### 3 Start the server:
 
 - Using Node.js:
 
@@ -31,7 +31,7 @@ node server.js
 nodemon server.js
 ```
 
-### 4⃣ Open in Browser:
+### 4 Open in Browser:
 
 Go to:
 
