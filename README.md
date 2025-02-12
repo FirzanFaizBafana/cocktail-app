@@ -60,4 +60,3 @@ http://localhost:3000/
 ## 🔗 API Used
 
 - [TheCocktailDB API](https://www.thecocktaildb.com/api.php)
-  > > > > > > > 4766f03 (Update README file)
