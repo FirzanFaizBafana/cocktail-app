@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktail App</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cocktail App</h1>
+      <button onclick="getCocktail()">Get Cocktail</button>
+      <h2 id="cocktail-name"></h2>
+      <img id="cocktail-image" src="" alt="" />
+      <p id="ingredients"></p>
+      <ul id="instructions"></ul>
+    </div>
+    <script>
+      async function getCocktail() {
+        try {
+          const response = await fetch("/random-cocktail");
+          const data = await response.json();
+
+          document.getElementById("cocktail-name").innerText = data.name;
+          document.getElementById("cocktail-image").src = data.image;
+          document.getElementById("instructions").innerText = data.instructions;
+
+          let ingredientsList = document.getElementById("ingredients");
+          ingredientsList.innerHTML = "";
+          data.ingredients.forEach((ingredient) => {
+            let li = document.createElement("li");
+            li.innerText = ingredient;
+            ingredientsList.appendChild(li);
+          });
+        } catch (error) {
+          console.error("Error fetching cocktail:", error);
+        }
+      }
+    </script>
+  </body>
+</html>
